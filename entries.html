@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crowd Management | Crowd Entries</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">kloudspot</h2>
+
+    <nav>
+      <a href="dashboard.html">Overview</a>
+      <a class="active" href="entries.html">Crowd Entries</a>
+    </nav>
+
+    <button class="logout">Logout</button>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <div class="left">
+        <h3>Crowd Solutions</h3>
+        <select>
+          <option>Avenue Mall</option>
+        </select>
+      </div>
+
+      <div class="right">
+        <span>EN</span>
+        <span>🔔</span>
+        <img class="avatar" src="avatar.png" />
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="content">
+
+      <div class="page-header">
+        <h2>Crowd Entries</h2>
+        <button class="date-btn">📅 Today</button>
+      </div>
+
+      <!-- TABLE -->
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Sex</th>
+              <th>Entry</th>
+              <th>Exit</th>
+              <th>Dwell Time</th>
+            </tr>
+          </thead>
+          <tbody id="entriesBody"></tbody>
+        </table>
+      </div>
+
+      <!-- PAGINATION -->
+      <div class="pagination">
+        <button id="prevBtn">Prev</button>
+        <span id="pageInfo">Page 1</span>
+        <button id="nextBtn">Next</button>
+      </div>
+
+    </section>
+  </main>
+
+</div>
+
+<script src="entries.js"></script>
+</body>
+</html>
